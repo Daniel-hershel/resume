@@ -1,0 +1,201 @@
+
+
+body{
+  /*background-color: #D3F6FA;*/
+  background-color: #fffFF8;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#grid{
+  display: grid;
+  width: 90vw;
+  margin: auto;
+  margin-top: 5vw;
+  grid-gap: 2vh;
+  grid-template-columns: 57vw 28vw;
+  grid-template-areas:
+  "name name"
+  "education contact"
+  "profProfile recognitions "
+  "work passions"
+  "work skillz ";
+  background-color: #fffFF8;
+  color: #444;
+  /*color: #111;*/
+}
+
+
+.title{
+
+	font-size: 135%;
+	color: #771427;
+	font-weight: 700;
+	margin-bottom: .5vh;
+}
+
+.circle {
+	width: 1vh;
+	height: 1vh;
+	border-radius: 50%;
+	margin: .05em;
+	/*background-color: #771427;*/
+	background-color: transparent;
+	border: .1em solid #771427;
+	float:right;
+	position: relative;
+}
+
+.circleFilled {
+	width: 1vh;
+	height: 1vh;
+	border-radius: 50%;
+	margin: .05em;
+	background-color: #771427;
+	/*background-color: transparent;*/
+	border: .1em solid #771427;
+	float:right;
+	position: relative;
+}
+.circlesOne{
+
+	position: absolute;
+	width: 45%;
+	left: 50%;
+
+
+}
+
+
+.circlesTwo{
+	position: absolute;
+	width: 45%;
+	left: 50%;
+
+
+}
+
+/*Sections*/
+.name {
+	 grid-area: name;
+	 /*background-color:#771427;*/
+	 border: 2px solid #771427;
+	text-align: center;
+	margin:auto;
+	width: 100%;
+
+
+}
+
+#myName{
+	padding: 2.5vh;
+	font-size: 200%;
+	width: 85%;
+	margin:auto;
+	font-weight: 900;
+	color:#771427;
+}
+.education {
+	 grid-area: education;
+}
+.contact {
+	 grid-area: contact;
+	 /*font-weight: 200;*/
+	 opacity: .9;
+	 font-size: 90%;
+}
+.profProfile {
+	 grid-area: profProfile;
+	 font-size: 105%;
+	 /*font-weight: 400;*/
+}
+
+#profile{
+
+	width: 85%;
+}
+.work {
+	 grid-area: work;
+}
+.skillz {
+	 grid-area: skillz;
+	 /*font-size: 115%;*/
+
+}
+.passions {
+	 grid-area: passions;
+	 opacity: .9;
+	 font-size: 90%;
+
+
+}
+
+.passion{
+	font-weight: bold;
+}
+
+.recognitions{
+
+	grid-area: recognitions;
+	 opacity: .9;
+	font-size: 90%;
+
+
+
+}
+.eduTime{
+	font-weight: bold;
+	margin-top: .5vh;
+
+}
+
+.eduWhere{
+
+}
+
+.eduProgram {
+
+	/*font-weight: bold;*/
+
+
+}
+
+/*work experience*/
+
+.workTime{
+
+}
+
+.workCompany{
+
+}
+
+.workTitle{
+
+	font-weight: bold;
+
+}
+
+.workDesc{
+
+}
+.workLoc{
+
+}
+
+
+.recWhat{
+
+	font-weight: bold;
+	margin-top: .5vh;
+
+}
+
+.recContext{
+
+}
+
+.recWhen {
+
+}
