@@ -10,17 +10,17 @@ body{
 
 #grid{
   display: grid;
-  width: 90vw;
+  width: 92vw;
   margin: auto;
-  margin-top: 5vw;
-  grid-gap: 2vh;
-  grid-template-columns: 57vw 28vw;
+  margin-top: 2vw;
+  grid-gap: 1.8vh;
+  grid-template-columns: 60vw 29vw;
   grid-template-areas:
   "name name"
   "education contact"
-  "profProfile recognitions "
-  "work passions"
-  "work skillz ";
+  "profProfile skillz "
+  "work recognitions"
+  "work passions ";
   background-color: #fffFF8;
   color: #444;
   /*color: #111;*/
@@ -102,12 +102,13 @@ body{
 .contact {
 	 grid-area: contact;
 	 /*font-weight: 200;*/
-	 opacity: .9;
-	 font-size: 90%;
+	 /*opacity: .9;*/
+	 font-size: 85%;
+	 width: 90%;
 }
 .profProfile {
 	 grid-area: profProfile;
-	 font-size: 105%;
+	 /*font-size: 105%;*/
 	 /*font-weight: 400;*/
 }
 
@@ -120,13 +121,16 @@ body{
 }
 .skillz {
 	 grid-area: skillz;
-	 /*font-size: 115%;*/
+	font-size: 85%;
+	width: 90%;
+
 
 }
 .passions {
 	 grid-area: passions;
-	 opacity: .9;
-	 font-size: 90%;
+	 /*opacity: .9;*/
+	 font-size: 85%;
+	 width: 90%;
 
 
 }
@@ -138,8 +142,8 @@ body{
 .recognitions{
 
 	grid-area: recognitions;
-	 opacity: .9;
-	font-size: 90%;
+	font-size: 85%;
+	width: 90%;
 
 
 
@@ -156,7 +160,7 @@ body{
 
 .eduProgram {
 
-	/*font-weight: bold;*/
+	font-weight: bold;
 
 
 }
@@ -174,10 +178,14 @@ body{
 .workTitle{
 
 	font-weight: bold;
+	letter-spacing: -.04em;
+	width: 85%;
 
 }
 
 .workDesc{
+
+	width: 85%;
 
 }
 .workLoc{

@@ -89,15 +89,14 @@ I have been the National Poetry SLAM Champion, the Director of Adolescent Health
 
 <ul>
 <li>
-<a href = "https://www.codecademy.com/pro/intensive/test-driven-development" target = "_blank"> Test Driven Development with JavaScript</a> 
+Test Driven Development with JavaScript
+</li>
+
+<li>Data Visualization with Python
 </li>
 
 <li>
-<a href = "https://www.codecademy.com/pro/intensive/data-visualization-with-python" target = "_blank">Data Visualization with Python </a>
-</li>
-
-<li>
-<a href = "https://www.codecademy.com/learn/learn-css" target = "_blank">CSS Grid Layout </a>
+CSS Grid Layout
  </li>
 
 </ul>
@@ -118,10 +117,9 @@ I have been the National Poetry SLAM Champion, the Director of Adolescent Health
 
 <ul>
 
-<li> <a href = "https://www.vidcode.com/creative-coding-one?SQF_SOURCE=homepage" target = "_blank"> Creative Coding </a> </li>
-<li> <a href = "https://www.vidcode.com/design-technology/" target = "_blank">Design and Technology</a> </li>
-<li> <a href = "https://docs.google.com/document/d/1vyUwCy-ZITXFZjpCATNKgQxm8cCodUCLUhC7DGBNmq0/edit" target = "_blank"> Art and Technology</a> </li>
-<li> <a href = "https://docs.google.com/document/d/1088AoVDn2U_6QRpi04GBWGyQbBJ2QIni9wcsW7u4jJg/edit#heading=h.i5omlvf771hz" target = "_blank"> Social Studies</a> </li>
+<li> Creative Coding</li>
+<li> Design and Technology </li>
+<li> Social Studies</li>
 </ul>
 
 
@@ -198,7 +196,71 @@ Awarded the Living Beyond Belief Butterfly Award for outstanding work in HIV/AID
 
 </div>
 
-<script src="sketch.js"></script>
+<script>
+	
+// 
+// Create divs for skills
+
+// div class = holder 
+let skills = 
+
+[
+
+ {skill: "HTML & CSS", score: 9 },
+ {skill: "JavaScript", score: 8},
+ {skill: "Velocity.js (animation)", score: 8 },
+ {skill: "p5.js", score:9},
+ {skill: "Python", score: 6 },
+ {skill: "Data Visualization", score: 6 },
+ {skill: "Wordpress", score: 7 },
+
+]
+// let sco
+
+
+console.log(skills)
+
+skills.forEach((element, index)=>{
+
+	let selector = $('.skillz')
+	let circlesOne = $("<div>", {class: "circlesOne"})
+	let circlesTwo = $("<div>", {class: "circlesTwo"})
+
+
+
+	for (var i =0; i< element.score; i++){
+	console.log(element.score)
+	let newCircleOne = $("<div>", {class: "circleFilled"})
+	circlesOne.append(newCircleOne)
+
+	}
+
+		for (var i = 0; i < 10; i++){
+	let newCircleTwo = $("<div>", {class: "circle"})
+	circlesTwo.append(newCircleTwo)
+		
+	}
+
+
+
+	let skill = $('<div>' + element.skill  + '</div>')
+	// let skill = $('<div class = "skill">'+ element.skill + ', ', + element.score + '</div>')
+
+	
+
+	// selector.append(circlesTwo)
+	// selector.append(circlesOne)
+	selector.append(skill)
+
+
+
+
+
+	console.log(element.skill)
+// create dom element for each
+// create the circles viz
+})	
+</script>
 
 
 
